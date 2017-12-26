@@ -140,8 +140,10 @@ if os.getcwd()=='/app':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     # 支持所有的主机头（host header）
-    ALLOWED_HOSTS = ['*']
+    ALLOWED_HOSTS = ['learning-log-wongi.herokuapp.com']
 
+    DEBUG=False 
+    
     # 静态资产配置
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     STATIC_ROOT = 'staticfiles'
